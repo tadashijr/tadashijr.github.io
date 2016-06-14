@@ -636,8 +636,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: #ff7496;
-			color: #ff7496 !important;
+			border-color: #00ff00;
+			color: #00ff00 !important;
 		}
 
 		input[type="submit"].icon,
