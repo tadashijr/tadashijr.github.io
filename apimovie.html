@@ -23,8 +23,7 @@ curl_close($ch);
 
 $filmes = json_decode($response, true);
 
-echo $filmes['results'][0]['title']. "<br>";
-echo $filmes['results'][1]['title']. "<br>";
+echo $filmes['results'][0]['title'];
 
 ?>
 
