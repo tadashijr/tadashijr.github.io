@@ -1,11 +1,3 @@
-<!doctype html>
-<html lang=pt>
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-
 <?php
 
 $ch = curl_init();
@@ -15,7 +7,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-    "Accept: application/json"
+  "Accept: application/json"
 ));
 
 $response = curl_exec($ch);
@@ -25,7 +17,5 @@ $filmes = json_decode($response, true);
 
 echo $filmes['results'][0]['title'];
 
-?>
 
-</body>
-</html>
+?>
